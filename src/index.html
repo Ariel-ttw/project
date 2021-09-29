@@ -3,61 +3,237 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="<?php echo base_url() ?>/assets/css/login.css">
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-<?php echo form_open(base_url().'login/do_login'); ?>
-<div class="Login-big-container">
-    <div class="Login-container">
-        <h2 class="Login-title">Login</h2>
-        <div class="Login-container1">
-            <div >
-                <input type="text" class="Login-form-control" placeholder="Username" required="required"
-                    name="username">
-            </div>
-            
-            <div >
-                <input type="password" class="Login-form-control" placeholder="Password" required="required"
-                    name="password">
-            </div>
-            <label class="Login-Label"><input type="checkbox" name="remember"> Remember me</label>
 
-        
-            <div class="g-recaptcha" data-sitekey="6LfRLCYcAAAAAKUTOzGIpWBkWhW2fCfwmibFm6Gv"></div>
-
-
-            <button type="submit" class="Login-Login">Login</button>
-        
-
-            
-            <a href="<?php echo base_url()?>forgot_password" class="Login-Link">Forget password?</a>
-            
-
-            <!-- <div class="Login-container2">
-                <a href="<?php echo $loginURL ?>" style='margin-left:6.5em'>
-                    <img src="<?php echo base_url() ?>/assets/img/google_login.png" class="login-google">
-                </a>
-            </div> -->
-            <!-- <div class="Login-container2">
-                <a href="<?php echo base_url()?>forgot_password" class="Login-Link">Forget password?</a>
-            </div> -->
-        </div>
-
-        <div class="Login-container2">
-                <a href="<?php echo $loginURL ?>">
-                    <img src="<?php echo base_url() ?>/assets/img/google_login.png" class="login-google">
-                </a>
-        </div>
-        
-        <div class="Login-form-group-container1">
-            <p class="Login-text">New to Doctrina? </p>
-            <a href="<?php echo base_url(); ?>Signup" class="Login-Signup"> Sign up</a>
+    <!--navigation bar-->
+    <div id="nav">
+        <div class="container">
+            <div class="header"></div>
+            <ul class="">
+                <li><a href="file:///Users/mac/Desktop/web%20design/index.html">Home</a></li>
+                <li><a href="file:///Users/mac/Desktop/web%20design/activity.html">Activity</a></li>
+                <li><a href="file:///Users/mac/Desktop/web%20design/log.html">Log in</a></li>
+                <li><a href="file:///Users/mac/Desktop/web%20design/hotel.html">Hotel</a></li>
+                <li><a href="file:///Users/mac/Desktop/web%20design/contact.html?">Bookings</a></li>
+                <li><a href="file:///Users/mac/Desktop/web%20design/reference.html">Reference</a></li>
+            </ul>
         </div>
     </div>
-</div>
+    </div>
 
-<?php echo form_close(); ?>
+    <!--slide-->
+    <div id="slide">
+        <section id="slideshow">
+            <article class="cycle-slideshow">
+
+                <img src="image/slide1.jpg" alt="aurora slide">
+                <img src="image/slide2.jpg" alt="aurora slide">
+                <img src="image/slide3.jpg" alt="aurora slide">
+                <img src="image/slide4.jpg" alt="aurora slide">
+
+            </article>
+        </section>
+    </div>
+    </div>
+
+    <!--activity-->
+    <div id="activity">
+        <div class="container">
+            <h2>Multiple activities</h2>
+            <ul>
+                <li>
+                    <div>
+                        <figure data-scroll-class="chapter-image-popped">
+                            <img src="image/bear.png" alt="polar bear">
+                        </figure>
+                    </div>
+                    <h3>Polar bear</h3>
+                    <p>Chasing the footprints </p>
+                    <a href="file:///Users/mac/Desktop/web%20design/contact.html">Book now</a>
+                </li>
+                <li class="line"></li>
+
+                <li>
+                    <div>
+                        <figure data-scroll-class="chapter-image-popped">
+                            <img src="image/tent.jpg" alt="camping tent">
+                        </figure>
+                    </div>
+                    <h3>Camping</h3>
+                    <p>Tent camping under the stars </p>
+                    <a href="file:///Users/mac/Desktop/web%20design/contact.html">Book now</a>
+                </li>
+                <li class="line"></li>
+
+                <li>
+                    <div>
+                        <figure data-scroll-class="chapter-image-popped">
+                            <img src="image/people.jpg" alt="Santa">
+                        </figure>
+                    </div>
+                    <h3>Santa</h3>
+                    <p>Ride the reindeer to visit Santa </p>
+                    <a href="file:///Users/mac/Desktop/web%20design/contact.html">Book now</a>
+                </li>
+                <li class="line"></li>
+
+                <li>
+                    <div>
+                        <figure data-scroll-class="chapter-image-popped">
+                            <img src="image/photo-of-gray-fish-caught-by-fishing-rod-1058295.jpg" alt="fishing">
+                    </div>
+                    </figure>
+                    <h3>Fishing</h3>
+                    <p>Taste the fresh seafood </p>
+                    <a href="file:///Users/mac/Desktop/web%20design/contact.html">Book now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="clike">Click to Read more information</div>
+    <div id="info">
+        <h3>Polar bear</h3>
+        <p>Suitable for families to experience together is to observe wild polar bears and pass
+            on the children's awareness of ecological environment protection.</p>
+        <h3>Camping</h3>
+        <p>The tent under the stars is located on the lawn, which is a good place for
+            couples dating and family gatherings.</p>
+        <h3>Santa</h3>
+        <p> Not only can you take a photo with the mysterious Santa, but you can also get a gift that Santa has
+            hand-picked for you.</p>
+        <h3>Fishing</h3>
+        <p>For lover of good food tourists, you can fish on the ice lake and have
+            someone to help cook the fresh seafood you catch.</p>
+    </div>
+
+    <!--detail-->
+    <div id="detail">
+        <div class="container">
+            <div class="detail-top">
+                <h2>More choices</h2>
+            </div>
+            <div class="detail-main">
+                <div class="detail-left left">
+                    <div>
+                        <img src="image/lunch-table-5929.jpg" alt="family lunch">
+                        <h1>Family long table buffet.</h1>
+                        <a href="file:///Users/mac/Desktop/web%20design/activity.html">Read more</a>
+                    </div>
+
+                    <div>
+                        <img src="image/photo-of-tent-at-near-trees-2422265.jpg" alt="camping tent">
+                        <h1>Tent camping under Polaris.</h1>
+                        <a href="file:///Users/mac/Desktop/web%20design/activity.html">Read more</a>
+                    </div>
+
+                    <div>
+                        <img src="image/northern-lights-1933319.jpg" alt="aurora ">
+                        <h1>Watch the aurora.</h1>
+                        <a href="file:///Users/mac/Desktop/web%20design/activity.html">Read more</a>
+                    </div>
+                </div>
+
+                <div class="detail-right right">
+                    <div>
+                        <img src="image/boarding.jpg" alt="boarding">
+                        <h1>Boating on the ice lake.</h1>
+                        <a href="file:///Users/mac/Desktop/web%20design/activity.html">Read more</a>
+                    </div>
+
+                    <div>
+                        <img src="image/48879547432_596e9403f0_c.jpg" alt="mermaid swimming">
+                        <h1>Mermaid costume experience.</h1>
+                        <a href="file:///Users/mac/Desktop/web%20design/activity.html">Read more</a>
+                    </div>
+
+                    <div>
+                        <img src="image/man-on-ski-board-on-snow-field-1271147.jpg" alt="skiing">
+                        <h1>Extreme skiing challenge.</h1>
+                        <a href="file:///Users/mac/Desktop/web%20design/activity.html">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--service-->
+    <div id="service">
+        <ul>
+            <li>
+                <ol>
+                    <li><a href="file:///Users/mac/Desktop/web%20design/index.html">Home</a></li>
+                    <li><a href="file:///Users/mac/Desktop/web%20design/reference.html">Reference</a></li>
+                </ol>
+            </li>
+            <li>
+                <ol>
+                    <li><a href="file:///Users/mac/Desktop/web%20design/activity.html">Activity</a></li>
+                    <li><a href="file:///Users/mac/Desktop/web%20design/activity.html">Ski</a></li>
+                    <li><a href="file:///Users/mac/Desktop/web%20design/activity.html">Polar bear</a></li>
+                    <li><a href="file:///Users/mac/Desktop/web%20design/activity.html">Ice fishing</a></li>
+                    <li><a href="file:///Users/mac/Desktop/web%20design/activity.html">Aurora viewing</a></li>
+                    <li><a href="file:///Users/mac/Desktop/web%20design/activity.html">Santa's Journey</a></li>
+                    <li><a href="file:///Users/mac/Desktop/web%20design/activity.html">Mermaid experience</a></li>
+                </ol>
+            </li>
+            <li>
+                <ol>
+                    
+                    <li><a href="file:///Users/mac/Desktop/web%20design/hotel.html">Hotel</a></li>
+                    <li><a href="file:///Users/mac/Desktop/web%20design/hotel.html">Tent</a></li>
+                    <li><a href="file:///Users/mac/Desktop/web%20design/hotel.html">Ice house</a></li>
+                    <li><a href="file:///Users/mac/Desktop/web%20design/hotel.html">Forest Chalet</a></li>
+                    <li><a href="file:///Users/mac/Desktop/web%20design/hotel.html">Vacation hotel</a></li>
+                </ol>
+            </li>
+            <li>
+                <ol>
+                    <li><a href="file:///Users/mac/Desktop/web%20design/log.html">Log in</a></li>
+                </ol>
+            </li>
+            <li>
+                <ol>
+                    <li><a href="file:///Users/mac/Desktop/web%20design/contact.html?">Bookings</a></li>
+                </ol>
+            </li>
+
+        </ul>
+    </div>
+    </div>
+
+    <!--footer-->
+    <div id="footer">
+        <div class="container">
+            <p>
+                <a href="file:///Users/mac/Desktop/web%20design/index.html">Home</a>
+                <a href="file:///Users/mac/Desktop/web%20design/activity.html">Activity</a>
+                <a href="file:///Users/mac/Desktop/web%20design/hotel.html">Hotel </a>
+                <a href="file:///Users/mac/Desktop/web%20design/log.html">Log in</a>
+                <a href="file:///Users/mac/Desktop/web%20design/contact.html">Bookings</a>
+                <a href="file:///Users/mac/Desktop/web%20design/reference.html">Reference</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.cycle2.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/scrollClass.min.js"></script>
+
 </body>
+
+<script>
+    $(document).ready(function () {
+        $("#clike").click(function () {
+            $("#info").slideDown("slow");
+        });
+    });
+</script>
+
+</html>
