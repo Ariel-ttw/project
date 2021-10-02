@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style-type: none;
+}
+a{
+    color: #8A4036;
+    text-decoration:none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+/*nav*/
+#nav{
+    height: 70px;
+    background-color:#C6DCFC;
+}
+#nav ul li{
+    float:left;
+    line-height: 70px;
+}
+#nav li a {
+    color: #6978A3;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0px 15px;
+}
+#nav li a:hover{
+    color: #57AF9C;
+}
+
+/*service design*/
+#service{
+    height:270px;
+    background-color: #A9A9F0 ;
+}
+#service ul{
+    width: 1110px;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+#service ul li{
+    width:170px;
+    float: left;
+    text-align: center;
+    margin: 0px 20px;
+}
+#service ol li{
+    line-height: 30px;
+}
+#service ol li a{
+    color: #380C29;
+}
+#service ol li a:hover{
+    color: #3B4E6B;
+}
+#service ol li:first-child a{
+    font-weight: bold;
+    color: #402C2B;
+}
+
+/*footer design*/
+#footer{
+    height: 40px;
+    background-color: #A5E6E1 ;
+}
+#footer p{
+    line-height: 40px;
+}
+#footer p a{
+    margin: 0px 30px;
+    color: #B991B3;
+    text-align: center;   
+}
+#footer a:hover{
+    color: #3B4E6B;
+}
+
+/*contact us design*/
+body{
+    background-color: #f2f4f6;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+table{
+    width: 800px;
+    margin: 0 auto;
+    background-color: #fae3d9;
+    padding: 0;
+}
+table tr{
+    height: 30px;
+}
+table tr td{
+    padding-left: 50px;
+    font-size: 18px;
+    color: #5e412f;
+}
+table tr td img{
+    height: 300px;
+    width: 1000px;
+    text-align: center;
+    padding-left: 0px;
+    opacity: .9;
+}
+table tr th h1{
+   font-size: 25px;
+   text-align: center;
+   padding-top: 20px;
+   color: #663300;
+}
+.submit{
+    width: 200px;
+    background-color: #a39391;
+    color: aliceblue;
+    border-radius: 30px;
+    line-height: 50px;
+    margin: 20px 30px 30px 30px ;
+
+}
+.check-box{
+    margin: 30px 10px 30px 30px;
+}
+.empty{
+    width: 200px;
+    background-color: #a39391;
+    color: aliceblue;
+    border-radius: 30px;
+    line-height: 50px;
+    margin: 20px 30px 30px 30px ;
+    font-size: 15px;
+}

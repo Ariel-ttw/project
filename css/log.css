@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ol,ul{
+    list-style-type: none;
+}
+a{
+    color: #8A4036;
+    text-decoration:none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+/*nav*/
+#nav{
+    height: 70px;
+    background-color:#C6DCFC;
+}
+#nav ul li{
+    float:left;
+    line-height: 70px;
+}
+#nav li a {
+    color: #6978A3;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0px 15px;
+}
+#nav li a:hover{
+    color: #57AF9C;
+}
+
+/*service design*/
+#service{
+    height:270px;
+    background-color: #A9A9F0 ;
+}
+#service ul{
+    width: 1110px;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+#service ul li{
+    width:170px;
+    float: left;
+    text-align: center;
+    margin: 0px 20px;
+}
+#service ol li{
+    line-height: 30px;
+}
+#service ol li a{
+    color: #380C29;
+}
+#service ol li a:hover{
+    color: #3B4E6B;
+}
+#service ol li:first-child a{
+    font-weight: bold;
+    color: #402C2B;
+}
+
+/*footer design*/
+#footer{
+    height: 40px;
+    background-color: #A5E6E1 ;
+}
+#footer p{
+    line-height: 40px;
+}
+#footer p a{
+    margin: 0px 30px;
+    color: #B991B3;
+    text-align: center;   
+}
+#footer a:hover{
+    color: #3B4E6B;
+}
+
+/*log in design*/
+
+.login{
+    height: 100%;
+    width: 100%;
+    background-image: url("/Users/mac/Desktop/web design/image/slide2.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.form{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 10% auto;
+    background: #A9A9F0;
+    padding: 5px;
+}
+.button{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ceefe4;
+    border-radius: 30px; 
+}
+.log-title{
+    padding: 10px 30px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+.log-button h2{
+    color: #614ad3;
+}
+.input{
+    top:180px;
+    position:absolute;
+    width: 280px;
+    transition: .5s;
+}
+.content{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #525252;
+    border-top: 1px solid #525252;
+    background: transparent;
+}
+.log-btn{
+    width: 85%;
+    padding: 10px 30px;
+    display: block;
+    margin: auto;
+    background: #8ac6d1;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+
+}
+span{
+    color: #121b74;
+    font-size: 15px;
+    bottom: absolute;
+}
+#table{
+    left: 50px;
+}
