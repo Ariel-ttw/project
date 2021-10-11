@@ -1,26 +1,52 @@
-<?php 
-// 获取提交的用户名+密码
-$input_username = $_POST["username"];
-$input_password = $_POST["password"];
+<?php
 
-// 查询用户是否存在
-$sql_server = "localhost";
-$sql_username = "root";
-$sql_password = "";
-$sql_database = "mydb";
-$con = new mysqli($sql_server, $sql_username, $sql_password, $sql_database);
-$sql = 'SELECT * FROM user_account WHERE username="' . $input_username . '"';
+header('content-type"text/html;charset="utf-8"');
 
-$res = $con->query($sql);
+$username = $_POST['username'];
+$password = $_POST['password'];
 
-// 用户不存在 正常注册
-if($res==null || $res->num_rows==0) {
-    $sql = 'INSERT INTO user_account (`username`, `password`) VALUES ("' . $input_username . '","' . $input_password . '")'; 
-    $con->query($sql);	// 数据库插入
-    echo "register success";
-} 
-// 用户存在 查询出错
-else if($res->num_rows>=1) {
-    echo "user existed";
-} 
+
+
+
+$link = mysqli_connect("localhost","root","","account");
+
+if(!$link){
+    $responddata['code']=0;
+    $responddata['message']="fail to connect database";
+    echo jason_encode($responddata);
+    exit;
+}
+
+mysqli_query($link,"set names 'utf8'");
+
+
+$sql = "SELECT * FROM users WHERE username= '{$username}'";
+$res = $link->query($sql);
+
+if ($res->num_rows > 0){
+    $responddata['code']=1;
+    $responddata['message'] = "username exists";
+    echo json_encode($responddata);
+    exit;
+}
+
+$sql1 =" INSERT INTO users(username,password) VALUES('{$username}','{$password}')";
+
+
+$res1 = mysqli_query($link, $sql1);
+if (!$res1){
+    $responddata['code'] = 2 ;
+    $responddata['message']="register fail";
+    echo json_encode($responddata);
+    exit;
+
+}else{
+    $responddata['code']=3;
+    $responddata['message']="register success";
+    echo json_encode($responddata);
+}
+mysqli_close($link);
+
+
+
 ?>
